@@ -1,7 +1,9 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+.vagrant/
 Gemfile.lock
 package-lock.json
 node_modules/
 .DS_Store
+*.gem
