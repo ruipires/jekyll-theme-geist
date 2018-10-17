@@ -591,6 +591,21 @@ The first (most recent) post in the list is styled to be bigger than the others 
     background: var(--lightgrey) center center;
     background-size: cover;
     border-radius: 5px;
+    position: relative;
+}
+
+p.credits {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font: bold 12px/20px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 5px;
 }
 
 @media (max-width: 1170px) {
