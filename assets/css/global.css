@@ -489,3 +489,32 @@ h6 {
         width: 100%;
     }
 }
+
+.s-animation-page-slide_in {
+    -webkit-animation: slideIn .75s;
+    animation: slideIn .75s;
+}
+
+
+@-webkit-keyframes fadein
+{
+    0%
+    {
+        opacity:0
+    }
+    to
+    {
+        opacity:1
+    }
+}
+@keyframes fadein
+{
+    0%
+    {
+        opacity:0
+    }
+    to
+    {
+        opacity:1
+    }
+}

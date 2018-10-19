@@ -1,5 +1,5 @@
 
-    <article class="post-card {{ page.previous.class }}{% unless page.previous.cover %} no-image{% endunless %}">
+    <article class="post-card {{ page.previous.class }}{% unless page.previous.cover %} no-image{% endunless %}" data-aos="fade">
         {% if page.previous.cover %}
             <a class="post-card-image-link" href="{{ site.baseurl }}{{ page.previous.url}}">
                 <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{ page.previous.cover }})"></div>

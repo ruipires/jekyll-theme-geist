@@ -1,5 +1,11 @@
 {% for post in paginator.posts %}
-    <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
+
+{% assign min = 80 %}
+{% assign max = 300 %}
+{% assign diff = max | minus: min %}
+{% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+
+    <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}" data-aos="fade-up" data-aos-offset="{{ randomNumber }}" data-aos-once="true">
         {% if post.cover %}
             <a class="post-card-image-link" href="{{ site.baseurl }}{{ post.url}}">
                 <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{ post.cover }})"></div>
