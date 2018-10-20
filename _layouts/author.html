@@ -39,6 +39,9 @@ logo: 'assets/images/ghost.png'
                     {% if author[1].twitter %}
                         <a class="social-link social-link-tw" href="https://twitter.com/{{ author[1].twitter }}" target="_blank" rel="noopener">{% include twitter.html %}</a>
                     {% endif %}
+                    {% if author[1].github %}
+                        <a class="social-link social-link-gh" href="https://github.com/{{ author[1].github }}" target="_blank" rel="noopener">{% include github.html %}</a>
+                    {% endif %}
                     {% if author[1].facebook %}
                         <a class="social-link social-link-fb" href="https://facebook.com/{{ author[1].facebook }}" target="_blank" rel="noopener">{% include facebook.html %}</a>
                     {% endif %}
