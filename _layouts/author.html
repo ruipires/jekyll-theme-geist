@@ -20,7 +20,7 @@ logo: 'assets/images/ghost.png'
             {% include site-nav.html %}
             <div class="site-header-content">
                 {% if author[1].picture %}
-                    <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ page.author }}" />
+                    <img class="author-profile-image" src="{{ site.baseurl }}/{{ author[1].picture }}" alt="{{ page.author }}" />
                 {% endif %}
                 <h1 class="site-title">{{ author[1].name }}</h1>
                 {% if author[1].bio %}
